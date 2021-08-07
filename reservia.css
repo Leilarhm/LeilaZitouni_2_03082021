@@ -1,0 +1,98 @@
+/* Police */
+
+@font-face
+{
+	font-family: 'Raleway';
+	src: url('Raleway.ttf')format('ttf');
+	src: url('Raleway.eot')format('eot');
+	src: url('Raleway.woff')format('woff');
+	src: url('Raleway.uvg')format('uvg');
+}
+
+.bloc_page
+{
+	font-family: Raleway, Arial, Georgia, Verdana, Serif;
+}
+
+
+
+/* Elements principaux de la page */`
+
+.bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+
+
+/* Header */
+
+
+header
+{
+	background-color: #FFFFFF;
+}
+
+.conteneur
+{
+	display: flex;
+}
+
+.logo
+{
+	flex-direction: row;
+}
+
+
+.sinscrire 
+{
+	color: #0065FC;
+}
+
+.hébergements
+{
+	color: #0065FC;
+}
+
+#menu
+{
+	float: right;
+}
+
+/* Navigation */
+
+nav ul
+{
+	list-style-type: none; /* Retire la puce devant les éléments de la liste*/
+	display: flex;
+
+}
+
+nav li
+{
+	margin-right: 30px; /*espace entre les éléments du menu*/
+}
+
+nav a 
+{
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #0065FC;
+
+}
+
+nav a: active
+{
+	background-color: #0065FC;
+}
+
+
+
+
+
+
+
