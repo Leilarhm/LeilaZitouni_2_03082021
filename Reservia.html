@@ -21,9 +21,9 @@
                     <div class="menu">
                         <nav>
                             <ul>
-                                <li class="hébergements"><a href="#ancre_hébergements">Hébergements</a></li>
-                                <li class="activités"><a href="#ancre_activités">Activités</a></li>
-                                <li class="sinscrire">S'inscrire</li>
+                                <li class="menuhébergements"><a href="#ancre_hébergements">Hébergements</a></li>
+                                <li class="menuactivités"><a href="#ancre_activités">Activités</a></li>
+                                <li class="menusinscrire">S'inscrire</li>
                             </ul>
                         </nav>
                     </div>
@@ -33,25 +33,32 @@
             </header>
 
             <div class="banniere_recherche">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h2>En plein centre ville ou en pleine nature</h2>
+                <h1 class="titre_bannière">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h2 class="texte_bannière">En plein centre ville ou en pleine nature</h2>
                 <form role="search">
-                    <div>
+                    <div class="barre_recherche">
                         <i class="fas fa-map-marker-alt"></i>
-                        <input type="search" id="maRecherche" name="RechercheMarseille,France" placeholder="Rechercher sur le site" aria-label="Rechercher parmi le contenu du site">
-                        <button>Rechercher</button>
+                        <input class="recherche" type="search" id="maRecherche" name="RechercheMarseille,France" placeholder="Rechercher sur le site" aria-label="Rechercher parmi le contenu du site">
+                        <button class="bouton">Rechercher</button>
                     </div>
                 </form>
             </div>
 
-            <div class="filtres">
-                <ul>
-                    <li><i class="fas fa-money-bill-wave"> &nbsp; </i>Economique</li>
-                    <li><i class="fas fa-child"> &nbsp; </i>Familial</li>
-                    <li><i class="fas fa-heart"> &nbsp; </i>Romantique</li>
-                    <li><i class="fas fa-dog"> &nbsp; </i>Animaux autorisés</li>
-                </ul>
-               
+            <div class="conteneur_filtres">
+                
+                <div class="filtres"> 
+                    <p class="titre_filtres"> Filtres </p> 
+                </div>
+                
+                <div class="liste_filtres">
+                    <ul>
+                        <li class="économique"><i class="fas fa-money-bill-wave"> &ensp; </i>Economique</li>
+                        <li class="familial"><i class="fas fa-child"> &ensp; </i>Familial</li>
+                        <li class="romantique"><i class="fas fa-heart"> &ensp; </i>Romantique</li>
+                        <li class="animaux"><i class="fas fa-dog"> &ensp; </i>Animaux autorisés</li>
+                    </ul>
+               </div>
+
             </div>
             
             <h2><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</h2>
@@ -254,25 +261,26 @@
             </section>
 
             <footer>
-                <div class="A propos">
-                    <h1>A propos</h1>
-                    <p>Fonctionnement du site</p>
-                    <p>Conditions générales de vente</p>
-                    <p>Données et confidentialité</p>
-                </div>
+                <div class="conteneurfooter">
+                    <div class="A_propos">
+                        <h1>A propos</h1>
+                        <p>Fonctionnement du site</p>
+                        <p>Conditions générales de vente</p>
+                        <p>Données et confidentialité</p>
+                    </div>
 
-                <div class="Nos hébergements">
-                    <h1>Nos hébergements</h1>
-                    <p>Charte qualité</p>
-                    <p>Soumettre votre hotel</p>
-                </div>
+                    <div class="Nos_hébergements">
+                        <h1>Nos hébergements</h1>
+                        <p>Charte qualité</p>
+                        <p>Soumettre votre hotel</p>
+                    </div>
 
-                <div class="Assistance">
-                    <h1>Assistance</h1>
-                    <p>Centre d'aide</p>
-                    <p>Nous contacter</p>
+                    <div class="Assistance">
+                        <h1>Assistance</h1>
+                        <p>Centre d'aide</p>
+                        <p>Nous contacter</p>
+                    </div>
                 </div>
-
             </footer>
 
         </div>
