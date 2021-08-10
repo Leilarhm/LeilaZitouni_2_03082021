@@ -42,23 +42,30 @@ header
 .logo
 {
 	flex-direction: row;
+	margin-left: 30px;
+	margin-top: 20px;
 }
 
 
-.sinscrire 
+.menusinscrire, .menuhébergements
 {
 	color: #0065FC;
 }
 
-.hébergements
+
+
+.menuactivités
 {
-	color: #0065FC;
+	color: #F2F2F2;
 }
 
-#menu
+.menu
 {
 	float: right;
+	margin-left: 800px;
+	margin-top: 20px;
 }
+
 
 /* Navigation */
 
@@ -66,12 +73,13 @@ nav ul
 {
 	list-style-type: none; /* Retire la puce devant les éléments de la liste*/
 	display: flex;
-
+	
 }
 
 nav li
 {
 	margin-right: 30px; /*espace entre les éléments du menu*/
+	
 }
 
 nav a 
@@ -82,16 +90,168 @@ nav a
 nav a:hover
 {
 	color: #0065FC;
-
 }
 
-nav a: active
+a:visited
 {
+	color: #0065FC;
+}
+
+a:focus
+{
+	color: #0065FC;
+}
+
+
+/* bannière recherche */
+
+.titre_bannière
+{
+	font-size: x-large;
+}
+
+.texte_bannière
+{
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.barre_recherche i
+{
+	margin-left: 20px;
+	margin-right: 0px;
+	border-width: 1px;
+	border-color: lightgrey;
+	border-style: solid;
+	border-radius: 15px 0px 0px 15px;
+	padding: 18px;
+	padding-bottom: 16px;
+	padding-top: 15px;
+	padding-right: 16;
+	padding-left: 16px;
+	background-color: #F2F2F2;
+
+}
+
+.recherche 
+{
+	margin-left: -6px;
+	margin-right: -4px;
+	border-width: 1px;
+	border-color: lightgrey;
+	border-style: solid;
+	border-radius: 0px 0px 0px 0px;
+	padding: 10px;
+	padding-bottom: 15px;
+	padding-top: 16px;
+}
+
+.bouton
+{
+	margin-left: -4px;
+	margin-right: 0px;
+	border-width: 1px;
+	border-color: #0065FC;
+	border-style: solid;
+	border-radius: 0px 15px 15px 0px;
+	padding: 10px;
+	padding-top: 16px;
+	padding-bottom: 15px;
 	background-color: #0065FC;
+	color: white;
+
+}
+
+/* filtres */
+
+div ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+.conteneur_filtres
+{
+	display: flex;
+}
+
+.économique, .familial, .romantique, .animaux
+{
+	margin-left: 40px;
+	border-width: 3px;
+	border-color: lightgrey;
+	border-style: solid;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.titre_filtres
+{
+	margin-top: 25px;
 }
 
 
 
+
+
+
+/* footer */ 
+
+/* couleur de fond */
+
+footer
+{
+	background-color: #F2F2F2;
+}
+
+/*disposition des blocs*/
+
+.conteneurfooter 
+{
+	display: flex; 
+}
+
+.A_propos
+{
+	margin-left: 40px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+
+}
+
+.Nos_hébergements
+{
+	margin-left: 300px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+
+}
+
+.Assistance
+{
+	margin-left: 450px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+
+}
+
+
+
+/* taille des titres*/
+
+.A_propos h1, .Nos_hébergements h1, .Assistance h1
+{
+	font-size: large;
+}
+
+
+
+/* taille des paragraphes */
+
+.A_propos p, .Nos_hébergements p, .Assistance p
+{
+	font-size: medium;
+}
 
 
 
