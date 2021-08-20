@@ -16,12 +16,13 @@
 
 
 
+
 /* Elements principaux de la page */`
 
 .bloc_page
 {
-    width: 900px;
-    margin: auto;
+    max-width: 1199px;
+    min-width: 0;
 }
 
 
@@ -108,12 +109,14 @@ a:focus
 .titre_bannière
 {
 	font-size: x-large;
+	margin-left: 32px;
 }
 
 .texte_bannière
 {
 	font-size: 18px;
 	font-weight: normal;
+	margin-left: 32px;
 }
 
 .barre_recherche i
@@ -162,6 +165,8 @@ a:focus
 
 }
 
+
+
 /* filtres */
 
 div ul
@@ -175,11 +180,21 @@ div ul
 	display: flex;
 }
 
-.économique, .familial, .romantique, .animaux
+.familial, .romantique, .animaux
 {
 	margin-left: 40px;
 	border-width: 3px;
-	border-color: lightgrey;
+	border-color: #F2F2F2;
+	border-style: solid;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.économique
+{
+	margin-left: 10px;
+	border-width: 3px;
+	border-color: #F2F2F2;
 	border-style: solid;
 	border-radius: 20px;
 	padding: 10px;
@@ -187,9 +202,91 @@ div ul
 
 .titre_filtres
 {
-	margin-top: 25px;
+	margin-top: 30px;
+	margin-left: 50px;
 }
 
+.logements_disponibles
+{
+	font-weight: normal;
+}
+
+/* body */
+
+/* photos et légendes */
+
+img
+{
+	width: 220px;
+	height: 120px;
+	border-width: 5px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 15px 15px 0px 0px;
+	margin-bottom: -5px;
+}
+
+figcaption
+{
+	border-width: 1px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 0px 0px 15px 15px;
+	background-color: white;
+	padding: 10px;
+	padding-left: 0px;
+	margin-right: 957px;
+}
+
+
+figcaption h2
+{
+	font-size: 13px;
+	margin-top: -6px;
+	margin-left: 2px;
+}
+
+figcaption p
+{
+	font-size: 12px;
+	margin-top: -8px;
+}
+
+
+.Hébergements_à_Marseille
+{
+	border-width: 1px;
+	border-color: #F2F2F2;
+	border-style: solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #F2F2F2;
+	width: 800px;
+	margin-left: 35px;
+	padding-right: 70px;	
+}
+
+aside
+{
+	border-width: 1px;
+	border-color: #F2F2F2;
+	border-style: solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #F2F2F2;
+	width: 400px;
+	margin-left: 45px;
+	padding-right: 40px;
+}
+
+.Hébergements
+{
+	display: flex ;
+}
+
+.images, .images2
+{
+	display: flex;
+	flex-wrap: wrap;
+}
 
 
 
