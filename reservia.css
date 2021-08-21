@@ -273,7 +273,7 @@ figcaption p
 }
 
 
-.Hébergements_à_Marseille
+.Hébergements_à_Marseille  /* cadre gris de fond*/
 {
 	border-width: 1px;
 	border-color: #F2F2F2;
@@ -288,7 +288,7 @@ figcaption p
 
 /*ASIDE*/
 
-aside
+aside  /* cadre  gris de fond */
 {
 	border-width: 1px;
 	border-color: #F2F2F2;
