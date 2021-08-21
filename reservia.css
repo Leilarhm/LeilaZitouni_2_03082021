@@ -1,3 +1,4 @@
+									/* GENERAL */
 /* Police */
 
 @font-face
@@ -27,7 +28,7 @@
 
 
 
-/* Header */
+											/* HEADER */
 
 
 header
@@ -114,7 +115,7 @@ a:focus
 
 .texte_bannière
 {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
 	margin-left: 32px;
 }
@@ -209,13 +210,30 @@ div ul
 .logements_disponibles
 {
 	font-weight: normal;
+	font-size: 16px;
+	margin-left: 40px;
 }
 
-/* body */
+											/* BODY*/
 
-/* photos et légendes */
 
-img
+/*Titre */
+
+.Hébergements_à_Marseille h1
+{
+	padding-left: 40px;
+	padding-top: 20px;
+}
+
+.Les_plus_populaires h1
+{
+	font-size: x-large;
+	padding-left: 40px;
+	padding-top: 20px;
+}
+/* photos et légendes Hébergements à Marseille */
+
+.Hébergements_à_Marseille img
 {
 	width: 220px;
 	height: 120px;
@@ -226,7 +244,9 @@ img
 	margin-bottom: -5px;
 }
 
-figcaption
+
+
+.Hébergements_à_Marseille figcaption
 {
 	border-width: 1px;
 	border-color: white;
@@ -234,7 +254,8 @@ figcaption
 	border-radius: 0px 0px 15px 15px;
 	background-color: white;
 	padding: 10px;
-	padding-left: 0px;
+	padding-left: 20px;
+	padding-right: 137px;
 	margin-right: 957px;
 }
 
@@ -243,13 +264,12 @@ figcaption h2
 {
 	font-size: 13px;
 	margin-top: -6px;
-	margin-left: 2px;
+	margin-left: 2px;  
 }
 
 figcaption p
 {
 	font-size: 12px;
-	margin-top: -8px;
 }
 
 
@@ -265,6 +285,9 @@ figcaption p
 	padding-right: 70px;	
 }
 
+
+/*ASIDE*/
+
 aside
 {
 	border-width: 1px;
@@ -275,6 +298,7 @@ aside
 	width: 400px;
 	margin-left: 45px;
 	padding-right: 40px;
+	margin-bottom: 1970px;
 }
 
 .Hébergements
@@ -288,11 +312,124 @@ aside
 	flex-wrap: wrap;
 }
 
+.icone
+{
+	margin-left: 400px;
+	margin-top: -40px;
+}
+
+.Les_plus_populaires img 
+{
+	width: 110px;
+	height: 90px;
+	border-width: 5px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 15px 0px 0px 15px;
+	margin-bottom: -5px;
+	margin-top: 15px;
+}
+
+.Les_plus_populaires .legende1
+{
+	border-width: 1px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 0px 15px 15px 0px;
+	background-color: white;
+	padding: 10px;
+	padding-left: 0px;
+	padding-right: 65px;
+	margin-top: 15px;
+	
+}
+
+
+.Les_plus_populaires .legende2
+{
+	border-width: 1px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 0px 15px 15px 0px;
+	background-color: white;
+	padding: 10px;
+	padding-left: 0px;
+	padding-right: 10px;
+	margin-top: 15px;
+}
+
+
+.Les_plus_populaires .legende3
+{
+	border-width: 1px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 0px 15px 15px 0px;
+	background-color: white;
+	padding: 10px;
+	padding-left: 0px;
+	padding-right: 65px;
+	margin-top: 15px;
+}
+
+.Les_plus_populaires h1
+{
+	margin-left: 20px;
+}
+
+.conteneur1  /* met la légende à coté de l'image */
+{
+	display: flex;
+}
+
+.conteneur2
+{
+	display: flex;
+}
+
+.conteneur3
+{
+	display: flex;
+}
+
+/* ACTIVITES À MARSEILLE */
+
+.Activités_à_Marseille img 
+{
+	width: 220px;
+	height: 120px;
+	border-width: 1px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.conteneur_activités
+{
+	display: flex;
+}
+
+.conteneur_activités2
+{
+	display: flex;
+}
+
+.ile_frioul
+{
+	margin-left: 340px;
+}
+
+.parc2
+{
+	margin-left: 343px;
+}
 
 
 
 
-/* footer */ 
+
+
+											/* FOOTER */ 
 
 /* couleur de fond */
 
