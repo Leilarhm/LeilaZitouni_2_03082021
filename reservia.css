@@ -1,5 +1,5 @@
 									/* GENERAL */
-/* Police */
+/* Police et taille page*/
 
 @font-face
 {
@@ -13,18 +13,11 @@
 .bloc_page
 {
 	font-family: Raleway, Arial, Georgia, Verdana, Serif;
-}
-
-
-
-
-/* Elements principaux de la page */`
-
-.bloc_page
-{
-    max-width: 1199px;
+	max-width: 1199px;
     min-width: 0;
+
 }
+
 
 
 
@@ -107,13 +100,13 @@ a:focus
 
 /* bannière recherche */
 
-.titre_bannière
+.bannerTitle
 {
 	font-size: x-large;
 	margin-left: 32px;
 }
 
-.texte_bannière
+.bannerText
 {
 	font-size: 16px;
 	font-weight: normal;
@@ -170,10 +163,13 @@ a:focus
 
 /* filtres */
 
-div ul
+.filterList ul
 {
 	list-style-type: none;
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0;
 }
 
 .conteneur_filtres
@@ -181,24 +177,26 @@ div ul
 	display: flex;
 }
 
-.familial, .romantique, .animaux
+.filterList ul li
 {
-	margin-left: 40px;
-	border-width: 3px;
-	border-color: #F2F2F2;
-	border-style: solid;
-	border-radius: 20px;
-	padding: 10px;
+	display: inline;
+  	margin-left: 25px;
+  	font-weight: 700;
+  	border: solid 2px #F2F2F2;
+  	padding: 0px 20px 0px 0px;
+  	margin-top: 10px;
+  	border-radius: 200px;
 }
 
-.économique
+
+
+.iconFilter
 {
-	margin-left: 10px;
-	border-width: 3px;
-	border-color: #F2F2F2;
-	border-style: solid;
-	border-radius: 20px;
-	padding: 10px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	padding: 18px;
+  	border-radius: 200px;
+  	margin-right: 15px;
 }
 
 .titre_filtres
@@ -219,74 +217,111 @@ div ul
 
 /*Titre */
 
-.Hébergements_à_Marseille h1
+.Hebergements_a_Marseille h2
 {
 	padding-left: 40px;
 	padding-top: 20px;
 }
 
-.Les_plus_populaires h1
+.Les_plus_populaires h2
 {
 	font-size: x-large;
 	padding-left: 40px;
 	padding-top: 20px;
 }
-/* photos et légendes Hébergements à Marseille */
 
-.Hébergements_à_Marseille img
+.Hebergements
 {
-	width: 220px;
+	display: flex;
+}
+
+
+/* fond gris et card Hébergements à Marseille */
+
+.Hebergements_a_Marseille  /* cadre gris de fond*/
+{
+	border-width: 1px;
+	width: 870px;
+	border-color: #F2F2F2;
+	background-color: #F2F2F2;
+	border-style: solid;
+	border-radius: 15px 15px 15px 15px;
+
+
+}
+
+
+.image
+{
+	width: 232px;
 	height: 120px;
 	border-width: 5px;
 	border-color: white;
 	border-style: solid;
 	border-radius: 15px 15px 0px 0px;
-	margin-bottom: -5px;
 }
 
-
-
-.Hébergements_à_Marseille figcaption
+.card   
 {
-	border-width: 1px;
-	border-color: white;
-	border-style: solid;
-	border-radius: 0px 0px 15px 15px;
-	background-color: white;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 137px;
-	margin-right: 957px;
-}
-
-
-figcaption h2
-{
-	font-size: 13px;
-	margin-top: -6px;
-	margin-left: 2px;  
-}
-
-figcaption p
-{
-	font-size: 12px;
-}
-
-
-.Hébergements_à_Marseille  /* cadre gris de fond*/
-{
-	border-width: 1px;
+	border-width: 3px;
 	border-color: #F2F2F2;
 	border-style: solid;
 	border-radius: 15px 15px 15px 15px;
 	background-color: #F2F2F2;
-	width: 800px;
-	margin-left: 35px;
-	padding-right: 70px;	
+	width: 210px;
+	height: 190px;
+	margin-left: 25px;
+	margin-right: 10px;
+	padding-right: 30px;
+	padding-bottom: 16px;
+	box-shadow: 5px 5px 5px rgb(196, 196, 196); /*ombre portée grise*/
+}
+
+figcaption
+{
+	width: 236px;
+	height: 75px;
+	background-color: white;
+	border-width: 3px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 0px 0px 15px 15px;
+}
+
+figcaption h3
+{
+	font-size: 14px;
+	margin-left: 5px;
+	margin-top: 0px;
+}
+
+figcaption p
+{
+	font-size: 14px;
+	margin-left: 5px;
+	margin-top: -6px;
+}
+
+.bluestar
+{
+	margin-left: 5px;
+	color: #0065FC;
+}
+
+.greystar
+{
+	color: #F2F2F2 ;
+}
+
+.cardContainer
+{
+	display: flex;
+	padding-bottom: 4px;
 }
 
 
-/*ASIDE*/
+
+												/*ASIDE*/
 
 aside  /* cadre  gris de fond */
 {
@@ -295,30 +330,29 @@ aside  /* cadre  gris de fond */
 	border-style: solid;
 	border-radius: 15px 15px 15px 15px;
 	background-color: #F2F2F2;
-	width: 400px;
-	margin-left: 45px;
-	padding-right: 40px;
+	width: 355px;
+	margin-left: 35px;
 	margin-bottom: 1970px;
+	padding-bottom: 30px;
 }
 
-.Hébergements
-{
-	display: flex ;
-}
-
-.images, .images2
+#titreLesPlusPopulaires  /*placer le titre et l'icone à côté*/
 {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .icone
 {
-	margin-left: 400px;
-	margin-top: -40px;
+	padding-left: 55px;
+	padding-top: 50px;
 }
 
-.Les_plus_populaires img 
+#titreLesPlusPopulaires h2  /*titre*/
+{
+	padding-left: 30px;
+}
+
+.image2
 {
 	width: 110px;
 	height: 90px;
@@ -326,75 +360,58 @@ aside  /* cadre  gris de fond */
 	border-color: white;
 	border-style: solid;
 	border-radius: 15px 0px 0px 15px;
-	margin-bottom: -5px;
-	margin-top: 15px;
 }
 
-.Les_plus_populaires .legende1
+.card2   /* cadre gris de chaque card avec ombre portée grise */
 {
-	border-width: 1px;
-	border-color: white;
+	
+	height: 100px;
+	width: 180px;
+	border-width: 3px;
 	border-style: solid;
-	border-radius: 0px 15px 15px 0px;
-	background-color: white;
-	padding: 10px;
-	padding-left: 0px;
-	padding-right: 65px;
-	margin-top: 15px;
+	border-color: #F2F2F2;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #F2F2F2;
+	margin-left: 35px;
+	padding-right: 100px;
+	box-shadow: 5px 5px 5px rgb(196, 196, 196); /*ombre portée grise*/
+	display: flex;
+	margin-bottom: 20px;
 	
 }
 
-
-.Les_plus_populaires .legende2
+figcaption /*cadre blanc légende de la card*/
 {
 	border-width: 1px;
 	border-color: white;
 	border-style: solid;
 	border-radius: 0px 15px 15px 0px;
 	background-color: white;
-	padding: 10px;
-	padding-left: 0px;
-	padding-right: 10px;
-	margin-top: 15px;
+	margin-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 25px ;
+
 }
 
-
-.Les_plus_populaires .legende3
+figcaption h3,p /*texte légende*/
 {
-	border-width: 1px;
-	border-color: white;
-	border-style: solid;
-	border-radius: 0px 15px 15px 0px;
-	background-color: white;
-	padding: 10px;
-	padding-left: 0px;
-	padding-right: 65px;
-	margin-top: 15px;
+	font-size: 14px;
+	width: 150px;
+	margin-top: 5px;
 }
 
-.Les_plus_populaires h1
+.fa-star /*étoiles*/
 {
-	margin-left: 20px;
+	margin-left: 5px;
+	color: #0065FC;
+
 }
 
-.conteneur1  /* met la légende à coté de l'image */
-{
-	display: flex;
-}
 
-.conteneur2
-{
-	display: flex;
-}
-
-.conteneur3
-{
-	display: flex;
-}
 
 /* ACTIVITES À MARSEILLE */
 
-.Activités_à_Marseille img 
+.Activites_a_Marseille img 
 {
 	width: 220px;
 	height: 120px;
@@ -404,12 +421,12 @@ aside  /* cadre  gris de fond */
 	border-radius: 15px 15px 0px 0px;
 }
 
-.conteneur_activités
+.conteneur_activites
 {
 	display: flex;
 }
 
-.conteneur_activités2
+.conteneur_activites2
 {
 	display: flex;
 }
@@ -436,56 +453,48 @@ aside  /* cadre  gris de fond */
 footer
 {
 	background-color: #F2F2F2;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*disposition des blocs*/
 
-.conteneurfooter 
+.footercontainer
 {
-	display: flex; 
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
-.A_propos
+.A_propos, .Nos_hebergements, .Assistance
 {
-	margin-left: 40px;
-	margin-bottom: 30px;
-	margin-top: 30px;
-
-}
-
-.Nos_hébergements
-{
-	margin-left: 300px;
-	margin-bottom: 30px;
-	margin-top: 30px;
-
-}
-
-.Assistance
-{
-	margin-left: 450px;
-	margin-bottom: 30px;
-	margin-top: 30px;
-
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
 }
 
 
 
 /* taille des titres*/
 
-.A_propos h1, .Nos_hébergements h1, .Assistance h1
+.A_propos h3, .Nos_hebergements h3, .Assistance h3
 {
-	font-size: large;
+	font-size: 18px;
+	margin-bottom: 15px;
 }
 
 
 
 /* taille des paragraphes */
 
-.A_propos p, .Nos_hébergements p, .Assistance p
+.A_propos p, .Nos_hebergements p, .Assistance p
 {
 	font-size: medium;
 }
+
+
 
 
 
