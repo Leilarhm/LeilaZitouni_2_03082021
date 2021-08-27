@@ -42,17 +42,26 @@ header
 }
 
 
-.menusinscrire, .menuhébergements
-{
-	color: #0065FC;
-}
-
 
 
 .menuactivités
 {
 	color: #F2F2F2;
 }
+
+
+
+.menu nav ul li:hover
+{
+	border-top: 3px solid #0065FC;
+    color:#0065FC;
+}
+
+.menu nav ul a:hover
+{
+	color:#0065FC;
+}
+
 
 .menu
 {
@@ -63,6 +72,11 @@ header
 
 
 /* Navigation */
+
+.menunav
+{
+	justify-content: space-between;
+}
 
 nav ul
 {
@@ -77,25 +91,18 @@ nav li
 	
 }
 
-nav a 
+nav a /*retire souligné*/
 {
-	text-decoration: none;
+	text-decoration: none ;
 }
 
-nav a:hover
+
+a:visited   /* couleur menu bleu */
 {
 	color: #0065FC;
 }
 
-a:visited
-{
-	color: #0065FC;
-}
 
-a:focus
-{
-	color: #0065FC;
-}
 
 
 /* bannière recherche */
@@ -177,6 +184,7 @@ a:focus
 	display: flex;
 }
 
+
 .filterList ul li
 {
 	display: inline;
@@ -186,23 +194,26 @@ a:focus
   	padding: 0px 20px 0px 0px;
   	margin-top: 10px;
   	border-radius: 200px;
+
 }
-
-
 
 .iconFilter
 {
 	color: #0065FC;
 	background-color: #DEEBFF;
 	padding: 18px;
+	padding-right: 10px;
   	border-radius: 200px;
   	margin-right: 15px;
 }
 
 .titre_filtres
 {
-	margin-top: 30px;
-	margin-left: 50px;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 45px;
+	margin-left: 30px;
+	margin-right: -100px;
 }
 
 .logements_disponibles
@@ -210,6 +221,12 @@ a:focus
 	font-weight: normal;
 	font-size: 16px;
 	margin-left: 40px;
+}
+
+.filterList li:hover
+{
+	text-decoration: underline;
+	background-color: #DEEBFF;
 }
 
 											/* BODY*/
@@ -304,7 +321,6 @@ figcaption p
 
 .bluestar
 {
-	margin-left: 5px;
 	color: #0065FC;
 }
 
@@ -364,7 +380,6 @@ aside  /* cadre  gris de fond */
 
 .card2   /* cadre gris de chaque card avec ombre portée grise */
 {
-	
 	height: 100px;
 	width: 180px;
 	border-width: 3px;
@@ -379,6 +394,13 @@ aside  /* cadre  gris de fond */
 	margin-bottom: 20px;
 	
 }
+
+.card2:active, .card:active/*effet zoom sur card au clic*/
+{
+	transform: scale(3);
+   	transition: 2s;
+}
+
 
 figcaption /*cadre blanc légende de la card*/
 {
@@ -404,7 +426,6 @@ figcaption h3,p /*texte légende*/
 {
 	margin-left: 5px;
 	color: #0065FC;
-
 }
 
 
@@ -421,28 +442,50 @@ figcaption h3,p /*texte légende*/
 	border-radius: 15px 15px 0px 0px;
 }
 
-.conteneur_activites
+
+.conteneur_activites, .conteneur_activites2
 {
 	display: flex;
 }
 
-.conteneur_activites2
+.activityCard5
 {
-	display: flex;
+	margin-left: 342px;
 }
 
-.ile_frioul
+.activityCard6
 {
-	margin-left: 340px;
+	margin-left: 349px;
 }
 
-.parc2
+.conteneur_activites figcaption, .conteneur_activites2 figcaption
 {
-	margin-left: 343px;
+	border-radius: 0px 0px 15px 15px;
+	border-width: 1px;
+	background-color: white;
+	border-color: white;
+	border-style: solid;
+	width: 200px;
+	height: 20px;
+	box-shadow: 5px 5px 5px rgb(196, 196, 196); /*ombre portée grise*/
 }
 
+figcaption
+{
+	text-align: left;
+	padding-left: 15px;
+}
 
+.activitylegend h3
+{
+	padding-top: 8px;
+	font-size: 16px;
+}
 
+.activityCard3 h3, .activityCard4 h3
+{
+	margin-top: -8px;
+}
 
 
 
@@ -455,31 +498,30 @@ footer
 	background-color: #F2F2F2;
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin-left: -5px;
+	padding-right: 250px;
 }
 
-/*disposition des blocs*/
 
-.footercontainer
+
+.footerContainer /*disposition des blocs*/
 {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
 }
 
-.A_propos, .Nos_hebergements, .Assistance
+.footerBloc   /*blocs*/
 {
-	padding: 30px;
 	display: flex;
 	flex-direction: column;
+	margin-left: 40px;
+	margin-right: 50px;
+	padding-right: 140px;
+	font-size: 15px;
 }
 
 
-
-/* taille des titres*/
-
-.A_propos h3, .Nos_hebergements h3, .Assistance h3
+.footerBloc h3 
 {
 	font-size: 18px;
 	margin-bottom: 15px;
@@ -487,12 +529,7 @@ footer
 
 
 
-/* taille des paragraphes */
 
-.A_propos p, .Nos_hebergements p, .Assistance p
-{
-	font-size: medium;
-}
 
 
 
