@@ -1,0 +1,298 @@
+
+/* CSS pour les mobiles */
+
+.bloc_page
+{
+	width: 600px;
+}
+
+/*HEADER*/
+
+.logo 
+{
+	margin-left: 7px;
+}
+
+.bannerTitle
+{
+	font-size: 20px;
+	margin-left: 7px;
+	border-style: solid;
+	border-color: white;
+	padding: 3px;
+	width: 300px;
+	word-wrap: break-word;
+}
+
+.bannerText
+{
+	font-size: 15px;
+	margin-left: 12px;
+}
+
+
+/*FILTRES*/
+
+.titre_filtres
+{
+	font-size: 18px;
+	margin-bottom: -17px;
+}
+
+
+.conteneur_filtres
+{
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.filterList ul
+{
+	font-size: 15px;
+	border-color: white;
+	border-style: solid;
+	padding: 3px;
+	width: 300px;
+	word-wrap: break-word;
+}
+
+
+.filterList ul li
+{
+	  display: inline;
+  	margin-left: 0px;
+  	font-weight: 600;
+  	border: solid 2px #F2F2F2;
+  	padding: 0px 15px 0px 0px;
+  	margin-top: 10px;
+  	border-radius: 200px;
+
+}
+
+.iconFilter
+{
+	color: #0065FC;
+	background-color: #DEEBFF;
+	padding: 12px;
+	padding-right: 3px;
+  	border-radius: 200px;
+  	margin-right: 15px;
+}
+
+.économique, .familial, .romantique, .animaux
+{
+	margin-left: 15px;
+}
+
+.logements_disponibles
+{
+	word-wrap: break-word;
+	font-size: 15px;
+	margin-left: 3px;
+	border-color: white;
+	border-style: solid;
+	width: 350px;
+}
+
+/*HEBERGEMENTS*/
+
+.Hebergements
+{
+	flex-direction: column-reverse;
+}
+
+
+.Hebergements_a_Marseille 
+{
+
+	width: 400px;
+	height: 1550px;
+	border-color: white;
+	background-color: white;
+	border-style: solid;
+}
+
+.ancre_hébergements
+{
+	font-size: 24px;
+	margin-left: -50px;
+}
+
+.card
+{
+	margin-bottom : 20px;
+}
+
+.cardmouettes
+{
+	margin-bottom: 0px;
+}
+
+.card   
+{
+	width: 290px;
+	height: 190px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 30px;
+	padding-bottom: 16px;
+}
+
+.image
+{
+	width: 313px;
+	height: 120px;
+	border-width: 5px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.Afficherplus
+{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 0px;
+}
+
+aside
+{
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+
+.cardContainer
+{
+	flex-direction: column;
+}
+
+/*ACTIVITES*/
+
+.conteneur_activites
+{
+	flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.Activites_a_Marseille
+{
+	margin: 5% 5% 0 5%;
+}
+
+.card3
+{
+	
+	margin-left: center;
+	width: 90%;
+}
+
+.activityCard1
+{
+	width: 320px;
+	height: 170px;
+	margin-bottom: 25px;
+	margin-left: -215px;
+}
+
+.activityCard1 img 
+{
+	width: 350px;
+	height: 150px;
+	padding-left: -10px;
+}
+
+.activityCard2
+{
+	width: 315px;
+	margin-left: -220px;
+	margin-bottom: 25px;
+	height: 160px;
+}
+
+.activityCard2 img 
+{
+	width: 345px;
+	height: 150px;
+}
+
+.activityCard5
+{
+	margin-left: -220px;
+	margin-right: 10px;
+	height: 160px;
+	width: 320px;
+	margin-bottom: 25px;
+}
+
+.activityCard5 img 
+{
+	height: 150px;
+	width: 350px;
+}
+
+.activityCard3
+{
+	width: 55%;
+	height: 175px;
+	padding-right: 50px;
+	padding-left: 10px;
+	margin-bottom: 25px;
+	margin-left: -250px;
+}
+
+.activityCard3 img 
+{
+	width: 345px;
+	height: 150px;
+}
+
+.activityCard4
+{
+	width: 325px;
+	height: 170px;
+	margin-left: -270px;
+}
+
+.activityCard4 img 
+{
+	height: 150px;
+	width: 353px;
+}
+
+.activityCard6
+{
+	height: 160px;
+	width: 330px;
+	margin-left: -270px;
+}
+
+.activityCard6 img 
+{
+	height: 150px;
+	width: 360px;
+}
+
+
+/*FOOTER */
+
+footer 
+{
+	margin-left: -45px;
+}
+
+.footerContainer /*disposition des blocs*/
+{
+	width: 100%;
+	flex-direction: column;
+}
+
+.footerBloc
+{
+	margin-top: 30px;
+}
+
+.footerBloc h3, p 
+{
+  margin-top: 0px;
+}
