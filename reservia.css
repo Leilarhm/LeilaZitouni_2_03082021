@@ -91,6 +91,7 @@ nav li
 nav a /*retire souligné*/
 {
 	text-decoration: none ;
+	color: #0065FC ;
 }
 
 
@@ -98,8 +99,6 @@ a:visited   /* couleur menu bleu */
 {
 	color: #0065FC;
 }
-
-
 
 
 /* bannière recherche */
@@ -163,7 +162,10 @@ a:visited   /* couleur menu bleu */
 
 }
 
-
+.barre_recherche_mobile
+{
+	display: none;
+}
 
 /* filtres */
 
@@ -327,7 +329,7 @@ a:visited   /* couleur menu bleu */
 }
 
 
-.fas .fa-star .greystar 
+#graystar 
 {
 	color: #F2F2F2;
 }

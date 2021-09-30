@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="tablette_version.css" media="all and (min-width: 601px) and (max-width: 1024px)">
         <title>Site Reservia</title>
         <!--kit's code kit-->
-        <script src="https://kit.fontawesome.com/4b04320c83.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     </head>
 
     <body>
@@ -17,27 +17,47 @@
 
 <!--header-->
 
+           
             <header>
 
                 <div class="conteneur">
 
                     <div class="logo">
                         <img src="Reservia.svg" alt="Logo_de_reservia"/>
-                    </div>
+                    </div> <br/> <br/> <br/>
+
                 
                     <div class="menu">
                         <nav class="navmenu">
                             <ul class="menuList">
                                 <li class="menuhebergements"><a href="#ancre_hébergements">Hébergements</a></li>
-                                <li class="menuactivités"><a href="#ancre_activités">Activités</a></li>
-                                <li class="menusinscrire"><a href="#">S'inscrire</a></li>
+                                <li id="activiteslien" class="menuactivités"><a href="#ancre_activités">Activités</a></li>
+                                <li class="menusinscrire" style="background-color: red; height: 100px; margin-bottom: 50px"><a href="#">S'inscrire</a></li>
                             </ul>
                         </nav>
                     </div>
 
-                </div>
+                    <div class="menumobile">
+                        <div id= "inscription_id" class="inscriptionlien"><a href="javascript:void(0);">S'inscrire</a></div>
+                    </div>
 
+                        <!--<div class="Hebergementsactivités"> 
+                            <div class="hebergementlien"><a href="javascript:void(0);">Hébergements</a></div>
+                            <div class="activiteslien"><a href="javascript:void(0);">Activités</a></div>
+                        </div>-->
+
+                       
+                    </div>
+                    
+                    <table width="60%">
+                            <tr>
+                                <td id= "hebergement_id" class="hebergementslien" align="center"><a href="javascript:void(0);">Hébergements</a></td>
+                                <td id="activite_id"class="activiteslien" align="center"><a href="javascript:void(0);">Activités</a>
+                                </td>
+                            </tr>
+                    </table>   
             </header>
+
 
 <!--section 1 : banniere recherche et filtres-->
 
@@ -47,11 +67,16 @@
             <form role="search">
                 <div class="barre_recherche">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input class="recherche" type="search" id="maRecherche" name="RechercheMarseille,France" placeholder="Rechercher sur le site" aria-label="Rechercher parmi le contenu du site">
-                        <button class="bouton">Rechercher</button>
+                    <input class="recherche" type="search" id="maRecherche" name="RechercheMarseille,France" placeholder="Rechercher sur le site" value="Marseille, France">
+                    <button class="bouton" onclick="alert('En développement');">Rechercher</button>
                 </div>
             </form>
-            
+
+            <div class="barre_recherche_mobile">
+                <i class="fas fa-map-marker-alt"></i>
+                <input class="recherche" type="search" id="maRecherche" name="RechercheMarseille,France" placeholder="Rechercher sur le site" aria-label="Rechercher parmi le contenu du site">
+                <div class="search_mobile">Q</div>    
+            </div>
 
             <div class="conteneur_filtres">
                 
@@ -93,7 +118,7 @@
                                 <i class="fas fa-star bluestar"></i>
                                 <i class="fas fa-star bluestar"></i>
                                 <i class="fas fa-star bluestar"></i>
-                                <i class="fas fa-star greystar"></i>
+                                <i class="fas fa-star" id="graystar"></i>
                             </div>
                         </div>
 
@@ -282,6 +307,8 @@
                         </div>
                     </div>
                 </div>
+
+            </section>
 
 <!--footer-->
 

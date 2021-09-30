@@ -31,6 +31,135 @@
 }
 
 
+
+/*barre de recherche */
+
+.barre_recherche
+{
+	display: none;
+}
+
+.barre_recherche_mobile
+{
+	display: flex;
+}
+
+.barre_recherche_mobile .fa-map-marker-alt
+{
+	margin-left: 20px;
+	margin-right: 0px;
+	border-width: 1px;
+	border-color: lightgrey;
+	border-style: solid;
+	border-radius: 15px 0px 0px 15px;
+	padding: 18px;
+	padding-bottom: 16px;
+	padding-top: 15px;
+	padding-right: 16;
+	padding-left: 16px;
+	background-color: #F2F2F2;
+}
+
+.search_mobile
+{
+	border-width: 1px;
+	border-color: #0065FC;
+	border-style: solid;
+	border-radius: 0px 15px 15px 0px;
+	background-color: #0065FC;
+	color: white;
+	padding: 15px;
+	width: 20px;
+	font-size: 20px;
+}
+
+
+/*menu en version mobile*/
+
+
+nav ul
+{
+	list-style-type: none; /* Retire la puce devant les éléments de la liste*/
+	display: flex;
+	flex-direction: column-reverse;
+	
+}
+
+.menu   /*Fait disparaitre le menu desktop*/
+{
+	display: none;
+}
+
+.menumobile
+{
+	display: block;
+	width: 57%;
+	margin-left: -100px;
+}
+
+.Hebergementsactivités
+{
+	display: flex;
+	padding-top: 70px;
+
+}
+
+.Hebergementsactivités a 
+{
+	padding-right: 10px;
+	padding-top: 70px;
+
+}
+
+
+table td          /*partie menu mobile hebergements et activités*/
+{
+	padding-top: 90px;
+	border-bottom: solid;
+	border-color: #0065FC;
+	width: 50%;
+	padding-bottom: 10px;
+}
+
+.activiteslien
+{
+	border-bottom: solid;
+	border-color: #F2F2F2;
+}
+
+table td a 
+{
+		color: #0065FC;
+}
+
+.inscriptionlien
+{
+	text-align: right;
+	margin-top: 40px;
+	margin-left: -50px;
+}
+
+.inscriptionlien a 
+{
+	color: #0065FC;
+}
+
+.hebergementlien
+{
+	margin-left: 20px;
+}
+
+.activiteslien
+{
+	margin-left:40px;
+}
+
+.menusinscrire
+{
+	padding-left: -60px;
+}
+
+
 /*FILTRES*/
 
 .titre_filtres
@@ -296,3 +425,151 @@ footer
 {
   margin-top: 0px;
 }
+
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 0px et 300px */
+@media all and (min-width: 0px) and (max-width: 300px){
+
+.bloc_page
+{
+	max-width: 300px;
+}
+
+	.conteneur_filtres
+{
+	flex-direction: column;
+}
+
+.menumobile
+{
+	display: block;
+	width: 90%;
+	margin-left: -100px;
+}
+
+.filterList ul
+{
+	font-size: 15px;
+	border-color: white;
+	border-style: solid;
+	padding: 3px;
+	width: 220px;
+	word-wrap: break-word;
+}
+
+.barre_recherche
+{
+	display: none;
+}
+
+.barre_recherche_mobile i
+{
+	margin-left: 20px;
+	margin-right: 0px;
+	border-width: 1px;
+	border-color: lightgrey;
+	border-style: solid;
+	border-radius: 15px 0px 0px 15px;
+	padding: 18px;
+	padding-bottom: 16px;
+	padding-top: 15px;
+	padding-right: 16;
+	padding-left: 16px;
+	background-color: #F2F2F2;
+}
+
+.bouton i 
+{
+	margin-left: -4px;
+	margin-right: 0px;
+	border-width: 1px;
+	border-color: #0065FC;
+	border-style: solid;
+	border-radius: 0px 15px 15px 0px;
+	padding: 10px;
+	padding-top: 16px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	background-color: #0065FC;
+	color: white;
+}
+
+.logements_disponibles
+{
+	font-size: 10px;
+}
+
+aside
+{
+	width: 300px;
+	height: 550px;
+}
+
+#titreLesPlusPopulaires h2
+{
+	font-size: 11px;
+
+}
+
+.icone
+{
+	margin-top: -20px;
+	margin-left: 50px;
+}
+
+.card2 
+{
+	width: 150px;
+	height: 100px;
+	margin-left: 10px;
+}
+
+.image2
+{
+	width: 80px;
+	height: 92px;
+}
+
+figcaption
+{
+	width: 155px;
+}
+
+figcaption h3,p /*texte légende*/
+{
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.fa-star
+{
+	margin-top: 0px;
+}
+
+.ancre_hébergements
+{
+	font-size: 15px;
+}
+
+.card 
+{
+	width: 220px;
+	margin-left: -20px;
+}
+
+.image
+{
+	width: 243px;
+}
+
+.Activites_a_Marseille h2 
+{
+	font-size: 17px;
+}
+
+footer
+{
+	width: 280px;
+}
+
+
