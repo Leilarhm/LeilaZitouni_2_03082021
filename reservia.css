@@ -46,12 +46,26 @@ header
 	color: #F2F2F2;
 }
 
+#table_menu
+{
+	display: none;
+}
 
-
-.menu nav ul li:hover
+.menuhebergements a 
 {
 	border-top: 3px solid #0065FC;
-    color:#0065FC;
+    color:#0065FC; 
+    padding-top: 40px;
+}
+
+.menusinscrire a 
+{
+	font-weight: bold;
+}
+
+.menuactivites a 
+{
+	color: #A9A9A9;
 }
 
 .menu nav ul a:hover
@@ -67,6 +81,10 @@ header
 	margin-top: 20px;
 }
 
+.menumobile
+{
+	display: none;
+}
 
 /* Navigation */
 
@@ -311,7 +329,7 @@ a:visited   /* couleur menu bleu */
 .legende
 {
 	height: 75px;
-	background-color: white;
+	background-color: white;c
 }
 
 .legende h3
@@ -440,8 +458,26 @@ figcaption h3,p /*texte légende*/
 }
 
 
-									/*activité à Marseille*/
-/*Card 1 Vieux Port*/
+												/*activité à Marseille*/
+
+
+
+#ancre_activités
+{
+	margin-left: 50px;
+}
+
+
+/*cards activités*/									
+
+
+.activityCard1 h3  
+{
+	font-size: 17px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
 
 .activityCard1 img
 {
@@ -468,12 +504,7 @@ figcaption h3,p /*texte légende*/
 	box-shadow: 4px 4px 4px rgb(196, 196, 196); /*ombre portée grise*/
 } 
 
-.activityCard1 h3
-{
-	font-size: 17px;
-	margin-top: 10px;
-	margin-left: 5px;
-}
+
 
 .cardlink
 {

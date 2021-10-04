@@ -6,7 +6,7 @@
 	width: 600px;
 }
 
-/*HEADER*/
+																						/*HEADER*/
 
 .logo 
 {
@@ -97,6 +97,11 @@ nav ul
 	margin-left: -100px;
 }
 
+#table_menu
+{
+	display: block;
+}
+
 .Hebergementsactivités
 {
 	display: flex;
@@ -112,7 +117,7 @@ nav ul
 }
 
 
-table td          /*partie menu mobile hebergements et activités*/
+table td          /*partie menu mobile hebergements et activités soulignée en bleu et gris*/
 {
 	padding-top: 90px;
 	border-bottom: solid;
@@ -121,10 +126,12 @@ table td          /*partie menu mobile hebergements et activités*/
 	padding-bottom: 10px;
 }
 
+
 .activiteslien
 {
 	border-bottom: solid;
 	border-color: #F2F2F2;
+	width: 175px;
 }
 
 table td a 
