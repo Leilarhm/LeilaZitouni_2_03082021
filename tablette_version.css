@@ -3,76 +3,129 @@
 	.logo
 	{
 		width: 100px;
-   		height: auto;
+   	height: auto;
 	}
+
+
+/*menu en version tablette*/
+
+nav ul
+{
+	list-style-type: none; /* Retire la puce devant les éléments de la liste*/
+	display: flex;
+	flex-direction: column-reverse;
+	
+}
+
+.menu   /*Fait disparaitre le menu desktop*/
+{
+	display: none;
+}
+
+.menumobile
+{
+	display: block;
+	width: 57%;
+	margin-left: -100px;
+}
+
+#table_menu
+{
+	display: block;
+}
+
+.Hebergementsactivités
+{
+	display: flex;
+	padding-top: 70px;
+
+}
+
+.Hebergementsactivités a 
+{
+	padding-right: 10px;
+	padding-top: 70px;
+
+}
+
+
+table td          /*partie menu mobile hebergements et activités soulignée en bleu et gris*/
+{
+	padding-top: 40px;
+	border-bottom: solid;
+	border-color: #0065FC;
+	width: 50%;
+	padding-bottom: 10px;
+}
+
+
+.activiteslien
+{
+	border-bottom: solid;
+	border-color: #F2F2F2;
+	width: 220px;
+}
+
+table td a 
+{
+		color: #0065FC;
+}
+
+.inscriptionlien
+{
+	text-align: right;
+	margin-top: 40px;
+	margin-left: -50px;
+}
+
+.inscriptionlien a 
+{
+	color: #0065FC;
+}
+
+.hebergementlien
+{
+	margin-left: 20px;
+}
+
+.activiteslien
+{
+	margin-left:40px;
+}
+
+.menusinscrire
+{
+	padding-left: -60px;
+}
+
+/*TITRES*/
 
 .bannerTitle
 {
-	font-size: 12px ;
-	margin-left: 0px;
+	font-size: 15px;
+	margin-top: 30px;
 }
 
 .bannerText
 {
-	font-size: 9px;
-	margin-left: 3px;
-}
-
-.barre_recherche i
-{
-	margin-left: 50px;
-	margin-top: 20px;
-	margin-right: 0px;
-	border-width: 1px;
-	border-color: lightgrey;
-	border-style: solid;
-	border-radius: 15px 0px 0px 15px;
-	padding: 8px;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-left: 10px;
-	background-color: #F2F2F2;
-
-}
-
-
-
-.recherche 
-{
-	margin-left: -6px;
-	margin-right: -4px;
-	border-width: 1px;
-	border-color: lightgrey;
-	border-style: solid;
-	border-radius: 0px 0px 0px 0px;
-	padding: 10px;
-	padding-bottom: 9px;
-	padding-top: 12px;
-}
-
-.bouton
-{
-	margin-left: -4px;
-	margin-right: 0px;
-	border-width: 1px;
-	border-color: #0065FC;
-	border-style: solid;
-	border-radius: 0px 15px 15px 0px;
-	padding: 5px;
-	padding-top: 12px;
-	padding-bottom: 9px;
-	background-color: #0065FC;
-	color: white;
-
+	font-size: 13px;
 }
 
 /*FILTRES*/
+
+
+.titre_filtres
+{
+	font-size: 13px;
+	margin-left: 10px;
+}
+
 
 .conteneur_filtres
 {
 	flex-wrap: wrap;
 	flex-direction: column;
+	margin-left: 30px;
 }
 
 .filterList ul
@@ -89,7 +142,7 @@
 .filterList ul li
 {
 	display: inline;
-  	margin-left: 20px;
+  	margin-left: 30px;
   	font-weight: 300;
   	border: solid 2px #F2F2F2;
   	padding: 0px 10px 0px 0px;
@@ -109,17 +162,35 @@
 }
 
 
-.titre_filtres
-{
-	font-size: 10px;
-	margin-left: 10px;
-}
 
 .logements_disponibles
 {
 	font-size: 10px;
 	margin-left: 10px;
 }
+
+/*LES PLUS POPULAIRES*/
+
+aside   /* cadre fond gris*/
+{
+	margin-left: 0px;
+	margin-top: 3px;
+	margin-bottom: 5px;
+	width: 460px;
+	height: 530px;
+}
+
+.icone
+{
+	margin-top: -15px;
+	margin-left: 160px;
+}
+
+.card2 
+{
+	margin-left: 85px;
+}
+
 
 /*HEBERGEMENTS*/
 
@@ -132,6 +203,7 @@
 .card
 {
 	margin-bottom : 20px;
+	margin-left: 90px;
 }
 
 .cardmouettes
@@ -139,14 +211,7 @@
 	margin-bottom: 0px;
 }
 
-aside
-{
-	margin-left: 0px;
-	margin-top: 3px;
-	margin-bottom: 5px;
-}
 	
-
 .Hebergements_a_Marseille
 {
 	background-color: white;
@@ -172,11 +237,6 @@ aside
 	font-size: 15px;
 }
 
-.icone
-{
-	margin-top: -15px;
-	margin-left: 70px;
-}
 
 
 /*ACTIVITES*/
@@ -203,7 +263,7 @@ aside
 	width: 190px;
 	height: 110px;
 	margin-bottom: 25px;
-	margin-left: -215px;
+	margin-left: -150px;
 }
 
 .activityCard1 img 
@@ -216,7 +276,7 @@ aside
 .activityCard2
 {
 	width: 195px;
-	margin-left: -220px;
+	margin-left: -160px;
 	margin-bottom: 25px;
 	height: 95px;
 }
@@ -229,7 +289,7 @@ aside
 
 .activityCard5
 {
-	margin-left: -220px;
+	margin-left: -160px;
 	margin-right: 10px;
 	height: 93px;
 	width: 195px;
@@ -249,7 +309,7 @@ aside
 	padding-right: 50px;
 	padding-left: 10px;
 	margin-bottom: 25px;
-	margin-left: -250px;
+	margin-left: -190px;
 }
 
 .activityCard3 img 
@@ -267,7 +327,7 @@ aside
 {
 	width: 200px;
 	height: 110px;
-	margin-left: -255px;
+	margin-left: -215px;
 }
 
 .activityCard4 img 
@@ -280,7 +340,7 @@ aside
 {
 	height: 100px;
 	width: 200px;
-	margin-left: -255px;
+	margin-left: -215px;
 }
 
 .activityCard6 img 

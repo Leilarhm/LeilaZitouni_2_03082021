@@ -55,17 +55,7 @@ header
 {
 	border-top: 3px solid #0065FC;
     color:#0065FC; 
-    padding-top: 40px;
-}
-
-.menusinscrire a 
-{
-	font-weight: bold;
-}
-
-.menuactivites a 
-{
-	color: #A9A9A9;
+    padding-top: 30px;
 }
 
 .menu nav ul a:hover
@@ -458,26 +448,8 @@ figcaption h3,p /*texte légende*/
 }
 
 
-												/*activité à Marseille*/
-
-
-
-#ancre_activités
-{
-	margin-left: 50px;
-}
-
-
-/*cards activités*/									
-
-
-.activityCard1 h3  
-{
-	font-size: 17px;
-	margin-top: 10px;
-	margin-left: 5px;
-}
-
+									/*activité à Marseille*/
+/*Card 1 Vieux Port*/
 
 .activityCard1 img
 {
@@ -504,7 +476,12 @@ figcaption h3,p /*texte légende*/
 	box-shadow: 4px 4px 4px rgb(196, 196, 196); /*ombre portée grise*/
 } 
 
-
+.activityCard1 h3
+{
+	font-size: 17px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
 
 .cardlink
 {
